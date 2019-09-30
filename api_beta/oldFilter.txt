@@ -1,0 +1,39 @@
+Array
+(
+    [IMEI] => 359475073040264
+    [ucode] => kadamkg
+    [pwd] => kadamkg
+    [mmmmast] => Array
+        (
+            [0] => Array
+                (
+                    [TXN_GUID] => 3594750730402641541140925
+                    [TXN_REFSEQ] => 12226267
+                    [SSEG_CODE] => HS01
+                    [TXN_DATE] => 02/11/2018
+                    [TXN_ACCD] => G000002
+                    [TXN_DATE1] => 15/07/2017
+                    [TXN_REF2] => 99
+                    [TXN_CTYPE] => CT001
+                    [TXN_CVAR] => CV002
+                    [TXN_SHIVAR] => S0007
+                    [TXN_VTYPE] => VT002
+                    [TXN_HTYPE] => JT003
+                    [TXN_CONS] => HT000902
+                    [TXN_TRNS] => HT000902
+                    [TXN_CNAME] => Sagar
+                    [TXN_VHNO] => MH 42 Q 4226
+                    [TXN_VJOINT] => J0007
+                    [TXN_CANEQ] => CQ001
+                    [TXN_FLAG2] => R
+                    [TXN_FLAG3] => R
+                    [TXN_FACTORY] => 
+                    [TXN_VJOINT1] => J0007
+                    [TXN_TTYPE] => JT001
+                    [TXN_WREFSEQ] => 12238432
+                    [TXN_EREFSEQ] => 12238432
+                )
+
+        )
+
+)
