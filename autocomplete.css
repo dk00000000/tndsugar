@@ -1,0 +1,48 @@
+h1 {
+    font-size: 20px;
+    color: #111;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.tt-hint,
+.city {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    height: 45px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 8px 12px;
+    width: 400px;
+    overflow: auto;
+}
+
+.tt-dropdown-menu {
+    width: 300px;
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 13px;
+    color: #111;
+    background-color: #F1F1F1;
+    height: 250px;
+    overflow:scroll;
+    height:250px;
+
+}
+.tt-dropdown-menu:hover{
+   background-color:#FF0000;
+
+}
+
+.autocomp-list{float:left;list-style:none;margin-top:-3px;padding:0;width:250px;position: absolute;overflow: scroll;height: 300px;z-index: 200}
+.autocomp-list li{padding: 10px; background: #f0f0f0; border-bottom: #bbb9b9 1px solid;}
+.autocomp-list li:hover{background:#ece3d2;cursor: pointer;}

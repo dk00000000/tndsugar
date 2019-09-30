@@ -1,0 +1,395 @@
+<?php
+$html = '
+<style>
+.gradient {
+      border:0.1mm solid #220044;
+      background-color: #f0f2ff;
+      background-gradient: linear #c7cdde #f0f2ff 0 1 0 0.5;
+}
+h4 {
+      font-family: sans;
+      font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+}
+div {
+      padding:0px 0px 0px 0px; //top right bottom left
+      margin: 0px 0px 0px 0px; //top right bottom left
+      text-align:justify;
+}
+.header { position: absolute;
+      overflow: visible;
+	  top:56mm;
+      left: 183mm;
+      height: 6mm;
+	  max-height: 6mm;
+	  width:15mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-f { position: absolute;
+      overflow: visible;
+      top:45mm;
+      left: 100mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 120mm;
+      border: 1px solid #000088;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-v { position: absolute;
+      overflow: visible;
+      top:50mm;
+      left: 100mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 60mm;
+      border: 1px solid #000088;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-s { position: absolute;
+      overflow: visible;
+      top:50mm;
+      left: 30mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 40mm;
+      border: 1px solid #000088;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-b { position: absolute;
+      overflow: visible;
+      top:45mm;
+      left: 30mm;
+	  width: 40mm;
+      height: 6mm;
+      max-height: 6mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-dt { position: absolute;
+      overflow: visible;
+      top:57mm;
+      left: 30mm;
+	  width: 25mm;
+      height: 6mm;
+      max-height: 6mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-fd { position: absolute;
+      overflow: visible;
+      top:57mm;
+      left: 100mm;
+	  width:25mm;
+      height: 6mm;
+      max-height: 6mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-td { position: absolute;
+      overflow: visible;
+      top:57mm;
+      left: 128mm;
+	  width:25mm;
+      height: 6mm;
+      max-height: 6mm;
+      border: 1px solid #880000;
+      padding: 00px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-w { position: absolute;
+      overflow: visible;
+      top:62mm;
+      left:30mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 30mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-r { position: absolute;
+      overflow: visible;
+      top:62mm;
+      left:100mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 30mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.particulars-a { position: absolute;
+      overflow: visible;
+      top:62mm;
+      left:194mm;
+      height: 6mm;
+      max-height: 6mm;
+	  width: 30mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.deductions-l { position: absolute;
+      overflow: visible;
+	  top:84mm;
+      left: 4mm;
+      height: 32mm;
+	  max-height: 35mm;
+	  width: 126mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin: 0px 0px 0px 0px;
+}
+.deductions-r { position: absolute;
+      overflow: visible;
+	  top:84mm;
+      left: 131mm;
+      height: 20mm;
+	  max-height: 20mm;
+	  width: 93mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin: 0px 0px 0px 0px;
+}
+.summary-aw { position: absolute;
+      overflow: visible;
+	  top: 117mm;
+      left: 33mm;
+      height: 9mm;
+	  max-height: 9mm;
+	  width: 190mm;
+      border: 1px solid #880088;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.summary-bb { position: absolute;
+      overflow: visible;
+	  top: 126mm;
+      left: 33mm;
+      height: 9mm;
+	  max-height: 9mm;
+	  width: 75mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.summary-ba { position: absolute;
+      overflow: visible;
+	  top: 126mm;
+      left: 133mm;
+      height: 6mm;
+	  max-height: 6mm;
+	  width: 50mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.summary-ded { position: absolute;
+      overflow: visible;
+	  top: 104mm;
+      left: 196mm;
+      height: 6mm;
+	  max-height: 6mm;
+	  width:28mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+.summary-np { position: absolute;
+      overflow: visible;
+	  top: 111mm;
+      left: 196mm;
+      height: 6mm;
+	  max-height: 6mm;
+	  width:28mm;
+      border: 1px solid #880000;
+      padding: 0px 0px 0px 0px;
+      font-family:sans;
+      margin:  0px 0px 0px 0px;
+}
+</style>
+<body>
+<div class="particulars-b">
+<table>
+<tr>
+<td align="left">DD17CPV000060</td>
+</tr>
+</table>
+</div>
+<div class="particulars-f">
+<table style="width:100%">
+<tr>
+<td align="left">G000639 पहाणे गुलाबराव रामभाऊ</td>
+</tr>
+</table>
+</div>
+<div class="particulars-s">
+<table style="width:100%">
+<tr>
+<td align="left">आलेगाव</td>
+</tr>
+</table>
+</div>
+<div class="particulars-v">
+<table style="width:100%">
+<tr>
+<td align="left">जोतीबानगर</td>
+</tr>
+</table>
+</div>
+<div class="particulars-dt">
+<table width="100%">
+<tr> 
+<td align="left">17/12/2017</td>
+</tr>
+</table>
+</div>
+<div class="particulars-fd">
+<table style="width:100%">
+<tr>
+<td align="left">15/11/2017</td>
+</tr>
+</table>
+</div>
+<div class="particulars-td">
+<table style="width:100%">
+<tr>
+<td align="left">15/11/2017</td>
+</tr>
+</table>
+</div>
+<div class="header">
+<table width="100%">
+<tr> 
+<td align="left">2017-18</td>
+</tr>
+</table>
+</div>
+<div class="particulars-w">
+<table style="width:100%">
+<tr>
+<td align="right">78.649</td>
+</tr>
+</table>
+</div>
+<div class="particulars-r">
+<table style="width:100%">
+<tr>
+<td align="right">2289.95</td>
+</tr>
+</table>
+</div>
+<div class="particulars-a">
+<table style="width:100%">
+<tr>
+<td align="right">180102.00</td>
+</tr>
+</table>
+</div>
+<div class="deductions-l">
+<table style="width:100%">
+<tr>
+<td align="left" valign="top" style="width:80%;">1. Deduction Details</td>
+<td align="right" style="width:20%;">10,000.00</td>
+</tr>
+<tr>
+<td align="left" valign="top" style="width:80%;">2. Deduction Details for Column 2  with Extended Description for Second Deduction</td>
+<td align="right" valign="top" style="width:20%;">20,000.00</td>
+</tr>
+<tr>
+<td align="left" valign="top" style="width:80%;">3. Deduction Details</td>
+<td align="right" valign="top" style="width:20%;">30,000.00</td>
+</tr>
+<tr>
+</table>
+</div>
+<div class="deductions-r">
+<table style="width:100%">
+<tr>
+<td align="left" valign="top" style="width:80%;">1. Deduction Details</td>
+<td align="right" style="width:20%;">10,000.00</td>
+</tr>
+<tr>
+<td align="left" valign="top" style="width:80%;">2. Deduction Details for Column 2  with Extended Description for Second Deduction</td>
+<td align="right" valign="top" style="width:20%;">20,000.00</td>
+</tr>
+</table>
+</div>
+<div class="summary-ded">
+<table style="width:100%">
+<tr>
+<td align="right">9999999.00</td>
+</tr>
+</table>
+</div>
+<div class="summary-aw">
+<table style="width:100%">
+<tr>
+<td valign="top" align="left">Amount In Words. This line some times will take second line as well for bigger amounts</td>
+</tr>
+</table>
+</div>
+<div class="summary-np">
+<table style="width:100%">
+<tr>
+<td align="right">999999999.00</td>
+</tr>
+</table>
+</div>
+<div class="summary-bb">
+<table style="width:100%">
+<tr>
+<td align="left">Bank and Branch. This line may also require one more line full description.</td>
+</tr>
+</table>
+</div>
+<div class="summary-ba">
+<table style="width:100%">
+<tr>
+<td align="left">Account Number</td>
+</tr>
+</table>
+</div>
+';
+//==============================================================
+//==============================================================
+//==============================================================
+include("./mpdf7/mpdf.php");
+$mpdf=new mPDF('utf-8', array(250, 152.4));
+$mpdf->debug = true;
+$mpdf->autoScriptToLang = true;
+$mpdf->autoLangToFont = true;
+$mpdf->allow_output_buffering=true;
+$mpdf->WriteHTML($html);   // Separate Paragraphs  defined by font
+$mpdf->Output();
+exit;
+//==============================================================
+//==============================================================
+//==============================================================
+?>
